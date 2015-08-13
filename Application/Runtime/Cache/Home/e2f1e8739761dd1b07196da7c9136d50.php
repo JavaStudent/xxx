@@ -1,0 +1,191 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>XXX-注册</title>
+
+    <!-- Bootstrap -->
+    <link href="/xxx/Public/Home/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .glyphicon
+        {
+            top:0;/*调整原来的样式（top:1)*/
+        }
+        .input-group
+        {
+            
+        }
+        .input-group .addon-first
+        {
+            border-radius: 0;
+            border-top-left-radius: 6px;
+        }
+        .input-group .addon, .input-group .input-middle
+        {
+            border-radius: 0;
+        }
+        .input-group .addon-last
+        {
+            border-radius: 0;
+            border-bottom-left-radius: 6px;
+        }
+        .input-group .input-first
+        {
+            border-radius: 0;
+            border-top-right-radius: 6px;
+        }
+        .input-group .input-last
+        {
+            width: 60%;
+            border-radius: 0;
+        }
+        .input-group img.verify
+        {
+            width: 40%;
+            height: 46px;
+            border-bottom-right-radius: 6px;
+        }
+        .redshine
+        {
+            border: 1px solid;
+            border-radius: 6px;
+            transition:border linear .2s,box-shadow linear .5s;
+            -moz-transition:border linear .2s,-moz-box-shadow linear .5s;
+            -webkit-transition:border linear .2s,-webkit-box-shadow linear .5s;
+            outline:none;border-color:rgba(255,0,0,0.5);
+            box-shadow:0 0 15px rgba(255,0,0,0.5);
+            -moz-box-shadow:0 0 15px rgba(255,0,0,0.5);
+            -webkit-box-shadow:0 0 15px rgba(255,0,0,0.5);
+        }
+    </style>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="navbar-header" style="width:5%;">
+            <a class="navbar-brand" href="#">XXX</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav" style="width:95%;">
+                <li><a href="<?php echo U('Home/Index/index');?>">首页</a></li>
+                <li class="active"><a href="<?php echo U('Home/Index/register');?>">注册</a></li>
+                <li><a href="<?php echo U('Home/Index/login');?>">登陆</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="alert alert-dismissible" role="alert" style="width: 30%;margin-left: auto;margin-right: auto; display:none;">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong id="message"></strong>
+    </div>
+    <div style="margin:0 auto; width:400px;">
+        <form id="registerForm" class="bs-example bs-example-form" role="form" action="" method="POST" onsubmit="return false;">
+            <div class="input-group input-group-lg">
+                <span class="glyphicon glyphicon-user input-group-addon addon-first"></span>
+                <input type="text" class="form-control input-first" id="username" placeholder="请输入用户名">
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="glyphicon glyphicon-eye-close input-group-addon addon"></span>
+                <input type="password" class="form-control input-middle" id="password" placeholder="请输入密码">
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="glyphicon glyphicon-eye-close input-group-addon addon"></span>
+                <input type="password" class="form-control input-middle" id="repassword" placeholder="请输入重复密码">
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="glyphicon glyphicon-envelope input-group-addon addon"></span>
+                <input type="text" class="form-control input-middle" id="email" placeholder="请输入邮箱">
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="glyphicon glyphicon-phone input-group-addon addon"></span>
+                <input type="text" class="form-control input-middle" id="phone" placeholder="请输入手机号码">
+            </div>
+            <div class="input-group input-group-lg">
+                <span class="glyphicon glyphicon-qrcode input-group-addon addon-last"></span>
+                <input type="text" class="form-control input-last" id="code" placeholder="请输入验证码">
+                <img class="verify" alt="点击切换" src="<?php echo U('Index/verify');?>" onClick="this.src=this.src+'?'+Math.random()">
+            </div>
+
+            <button style="margin-top: 10px;" class="btn btn-lg btn-primary btn-block" id="submit">注册</button>
+        </form>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
+    <script src="/xxx/Public/Home/js/jquery-1.11.3.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/xxx/Public/Home/js//bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#submit").on("click",function(){
+                var username = $("#username").val();
+                var password = $("#password").val();
+                var repassword = $("#repassword").val();
+                var email = $("#email").val();
+                var phone = $("#phone").val();
+                var verify = $("#code").val();
+
+                var url = window.location;
+                if(checkRegister(username,password,repassword,email,phone,verify))
+                {
+                    $("#registerForm").removeClass('redshine');
+                    $.ajax({
+                        url:'<?php echo U('Home/Index/register');?>',
+                        data:{'username':username,'password':password,'email':email,'phone':phone,'verify':verify},
+                        type:'post',
+                        cache:false,
+                        dataType:'json',
+                        success:function(data){
+                            if(data.status == 2){
+                                $('.alert').addClass("alert-danger");
+                                $("#message").text(data.message);
+                                $('.alert').show();
+                            }
+                            if(data.status == 1){
+                                $('.alert').addClass("alert-danger");
+                                $("#message").text(data.message);
+                                $('.alert').show();
+                            }
+                            if(data.status == 0){
+                                $('.alert').removeClass("alert-danger");
+                                $('.alert').addClass("alert-success");
+                                $("#message").text(data.message);
+                                $('.alert').show();
+                            }
+                        },
+                        error:function(data){
+                            
+                        }
+                    });
+                }else{
+                    $("#registerForm").addClass('redshine');
+                }
+     
+            });
+        });
+
+        function checkRegister(username, password, repassword, email, phone, verify){
+            if(username!=''&&password!=''&&repassword!=''&&email!=''&&phone!=''&&verify!='')
+            {
+                if(password!=repassword)
+                {
+                    return false;
+                }else{
+                    return true;
+                }
+            }else{
+                return false;
+            }
+        }
+        
+    </script>
+  </body>
+</html>

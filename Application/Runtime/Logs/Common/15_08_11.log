@@ -1,0 +1,78 @@
+[ 2015-08-11T17:44:21+08:00 ] 127.0.0.1 /xxx/__JS__/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003628s ]
+ERR: 无法加载模块:__JS__
+
+[ 2015-08-11T17:44:21+08:00 ] 127.0.0.1 /xxx/__JS__/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003685s ]
+ERR: 无法加载模块:__JS__
+
+[ 2015-08-11T17:44:21+08:00 ] 127.0.0.1 /xxx/__CSS__/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001459s ]
+ERR: 无法加载模块:__CSS__
+
+[ 2015-08-11T17:44:23+08:00 ] 127.0.0.1 /xxx/__CSS__/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001603s ]
+ERR: 无法加载模块:__CSS__
+
+[ 2015-08-11T17:44:23+08:00 ] 127.0.0.1 /xxx/__JS__/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002240s ]
+ERR: 无法加载模块:__JS__
+
+[ 2015-08-11T17:44:23+08:00 ] 127.0.0.1 /xxx/__JS__/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003178s ]
+ERR: 无法加载模块:__JS__
+
+[ 2015-08-11T17:44:28+08:00 ] 127.0.0.1 /xxx/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001399s ]
+ERR: 无法加载模块:Login
+
+[ 2015-08-11T17:44:32+08:00 ] 127.0.0.1 /xxx/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000090s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001434s ]
+ERR: 无法加载模块:Register
+
+[ 2015-08-11T17:45:24+08:00 ] 127.0.0.1 /xxx/__JS__/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000099s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001497s ]
+ERR: 无法加载模块:__JS__
+
+[ 2015-08-11T17:45:24+08:00 ] 127.0.0.1 /xxx/__JS__/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001795s ]
+ERR: 无法加载模块:__JS__
+
+[ 2015-08-11T17:45:24+08:00 ] 127.0.0.1 /xxx/__CSS__/bootstrap.min.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003906s ]
+ERR: 无法加载模块:__CSS__
+
+[ 2015-08-11T17:56:12+08:00 ] 127.0.0.1 /xxx/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000088s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001304s ]
+ERR: 无法加载模块:Login
+
+[ 2015-08-11T17:59:26+08:00 ] 127.0.0.1 /xxx/index.php/Public/Home/css/bootstrap.min.css.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002765s ]
+ERR: 无法加载模块:Public
+

@@ -1,0 +1,312 @@
+[ 2015-08-12T17:03:05+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001475s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:03:05+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000218s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006815s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:10:28+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001614s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:10:28+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001554s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:11:08+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000199s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001839s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:11:08+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001854s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007434s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:12:39+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003705s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:12:39+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000117s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003861s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:13:46+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001490s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:13:46+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000204s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001684s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:14:49+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000128s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002524s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:14:49+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005994s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:21:49+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001653s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:21:49+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001708s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:21:52+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001872s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:21:52+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000125s ]
+INFO: [ app_init ] --END-- [ RunTime:0.009638s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:24:00+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001894s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:24:00+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002059s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:25:05+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002657s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:25:05+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001488s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:25:10+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001983s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:25:10+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000091s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002081s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:03+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006695s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:03+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001560s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:06+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002085s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:06+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001583s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:09+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000175s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002372s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:09+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001758s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:11+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002400s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:11+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001444s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:12+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002764s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:12+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001670s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:14+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000176s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002110s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:14+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000115s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001925s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:15+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002937s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:27:15+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000339s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002053s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:28:30+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000139s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001611s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:28:30+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001661s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:28:31+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000102s ]
+INFO: [ app_init ] --END-- [ RunTime:0.003623s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:28:31+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001526s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:19+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000096s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001666s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:19+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000092s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001502s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:21+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001897s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:21+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000100s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002131s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:21+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000103s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002084s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:21+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001614s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:22+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000106s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001701s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:22+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000095s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001436s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:26+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000097s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005106s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:26+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000093s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001910s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:54+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/jquery-1.11.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000098s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005026s ]
+ERR: 无法加载模块:Public
+
+[ 2015-08-12T17:31:54+08:00 ] 127.0.0.1 /xxx/Public/Home/Home/js/bootstrap.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000118s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002345s ]
+ERR: 无法加载模块:Public
+
