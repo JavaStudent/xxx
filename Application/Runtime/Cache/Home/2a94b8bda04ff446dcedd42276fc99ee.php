@@ -74,7 +74,7 @@
                 <li><a href="<?php echo U('Home/Index/register');?>">注册</a></li>
                 <li><a href="<?php echo U('Home/Index/login');?>">登陆</a></li>
                 <li class="dropdown" style="float:right; right: 5%;">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">用户名 <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php echo ($user_info['username']); ?> <span class="caret"></span></a>
                   <ul class="dropdown-menu">
                     <li><a href="#">个人信息</a></li>
                     <li role="separator" class="divider"></li>
@@ -84,38 +84,33 @@
             </ul>
         </div>
     </nav>
+    <div class="alert alert-dismissible" role="alert" style="width: 30%;margin-left: auto;margin-right: auto; display:none;">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <strong id="message"></strong>
+    </div>
     <div style="margin:0 auto; float:none;" class="col-md-5">
         <table class="table table-hover">
             <thead>
               <tr><th>编号</th><th>用户名</th><th>邮箱</th><th>手机号码</th><th>操作</th></tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td><td>用户名1</td><td>邮箱1</td><td>手机号码1</td>
-                <td>
-                  <button class="modal-button glyphicon glyphicon-pencil edit" data-toggle="modal" data-target="#myModal"></button>
-                  <button class="modal-button glyphicon glyphicon-remove delete" onclick="javascript:firm();"></button>
-                </td>
-              </tr>
-              <tr>
-                <td>2</td><td>用户名2</td><td>邮箱2</td><td>手机号码2</td>
-                <td>
-                  <button class="modal-button glyphicon glyphicon-pencil edit" data-toggle="modal" data-target="#myModal"></button>
-                  <button class="modal-button glyphicon glyphicon-remove delete" onclick="javascript:firm();"></button>
-                </td>
-              </tr>
-              <tr>
-                <td>3</td><td>用户名3</td><td>邮箱3</td><td>手机号码3</td>
-                <td>
-                  <button class="modal-button glyphicon glyphicon-pencil edit" data-toggle="modal" data-target="#myModal"></button>
-                  <button class="modal-button glyphicon glyphicon-remove delete" onclick="javascript:firm();"></button>
-                </td>
-              </tr>
+              <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><tr>
+                  <td><?php echo ($user["id"]); ?></td><td><?php echo ($user["username"]); ?></td><td><?php echo ($user["username"]); ?></td><td><?php echo ($user["username"]); ?></td>
+                  <td>
+                    <button class="modal-button glyphicon glyphicon-pencil edit" data-toggle="modal" data-target="#myModal<?php echo ($user["id"]); ?>"></button>
+                    <button class="modal-button glyphicon glyphicon-remove delete" onclick="javascript:firm(<?php echo ($user["id"]); ?>,<?php echo ($nowPage); ?>);"></button>
+                  </td>
+                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
             </tbody>
         </table>
     </div>
+    <div style="width:100%;">
+      <nav style="width:40%; margin:0 auto;">
+        <?php echo ($show); ?>
+      </nav>
+    </div> <!--/分页 -->
     <!-- 模态框-->
-        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModleLabel" aria-hidden="true">
+    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><div class="modal fade" id="myModal<?php echo ($user["id"]); ?>" tabindex="-1" role="dialog" aria-labelledby="myModleLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
                     <form class="bs-example bs-example-form" role="form" action="" method="POST">
@@ -125,13 +120,14 @@
                       </div>
                       <div class="modal-body">
                           <!-- 表单 -->
+                          <input type="hidden" value="<?php echo ($user["id"]); ?>"/>
                           <div class="input-group input-group-lg">
                               <span class="glyphicon glyphicon-envelope input-group-addon addon-first"></span>
-                              <input type="text" class="form-control input-first" placeholder="请输入邮箱" required>
+                              <input type="text" class="form-control input-first" placeholder="请输入邮箱" value="<?php echo ($user["email"]); ?>" required>
                           </div>
                           <div class="input-group input-group-lg">
                               <span class="glyphicon glyphicon-phone input-group-addon addon-last"></span>
-                              <input type="text" class="form-control input-last" placeholder="请输入手机号码" required>
+                              <input type="text" class="form-control input-last" placeholder="请输入手机号码" value="<?php echo ($user["phone"]); ?>" required>
                           </div>
                       </div>
                       <div class="modal-footer">
@@ -141,16 +137,17 @@
                     </form>
                 </div>
             </div>
-        </div>
+        </div><?php endforeach; endif; else: echo "" ;endif; ?><!--/模态框-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <!--<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>-->
     <script src="/xxx/Public/Home/js/jquery-1.11.3.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/xxx/Public/Home/js/bootstrap.min.js"></script>
     <script>
-        function firm() {
+        function firm(id,p) {
           if (confirm("你确定删除吗？")) {
-
+            var url = 'delUser/id/'+id+"/p/"+p;
+            window.location.href="<?php echo U('"+url+"');?>";
           }else{
 
           }

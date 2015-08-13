@@ -56,9 +56,25 @@ class UserModel extends Model {
 		if($result)
 		{
 			session('user_auth',$result["id"]);
+			session('user_info',$result);
 			return $result;
 		}else{
 			return 0;
 		}
 	}
+
+	public function getUserPage($num){
+		$id = session('user_auth');
+		$result = $this->where("id != %d",array($id))->page($num.',5')->select();
+		return $result;
+	}
+
+	public function getUserCount(){
+		return $this->count();
+	}
+
+	public function deleteUser($id){
+		return $this->where("id = %d",array($id))->delete();
+	}
+
 }

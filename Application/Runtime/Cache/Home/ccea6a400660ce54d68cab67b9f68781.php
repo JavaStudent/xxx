@@ -138,6 +138,13 @@
                                 $("#message").text(data.message);
                                 $('.alert').show();
                             }
+                            if(data.status == 4){
+                                $('.alert').removeClass("alert-danger");
+                                $('.alert').addClass("alert-success");
+                                $("#message").text(data.message);
+                                $('.alert').show();
+                                window.location=data.url;
+                            }
                         },
                         error:function(data){
                             

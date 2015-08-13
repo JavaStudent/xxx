@@ -7,17 +7,21 @@ class IndexController extends Controller {
     	if(!$this->is_login()){
     		$this->redirect('Index/login');
     	}else{
+            $user_info = session('user_info');
+            // var_dump($user_info);
+            $Page = $this->userPage($_GET['p']?$_GET['p']:1);
+
+            $this->assign('list',$Page['list']);
+            $this->assign('count',$Page['count']);
+            $this->assign('show',$Page['show']);
+            $this->assign('nowPage',$_GET['p']?$_GET['p']:1);
+            $this->assign('user_info',$user_info);
     		$this->display("index");
     	}
        
     }
 
     public function login(){
-    	if(!$this->is_login()){
-    		$this->display("login");
-    	}else{
-    		$this->redirect("index");
-    	}
 
     	if(IS_POST){
     		$data['username'] = $_POST['username'];
@@ -33,25 +37,26 @@ class IndexController extends Controller {
 
 	    	if($User->checkLogin($data['username'],$data['password']))
 	    	{
-	    		$this->redirect("index");
+	    		$this->ajaxReturn($this->ajaxReturnMessage(4));
 	    	}else{
 	    		$this->ajaxReturn($this->ajaxReturnMessage(3));
 	    	}
 
     	}
+        if(!$this->is_login()){
+            $this->display("login");
+        }else{
+            $this->redirect("index");
+        }
     }
 
     public function logout(){
     	session('user_auth', null);
+        session('user_info', null);
+        $this->redirect('index');
     }
 
     public function register(){
-
-    	if(!$this->is_login()){
-    		$this->display("register");
-    	}else{
-    		$this->redirect("index");
-    	}
 
     	if(IS_POST){
     		$data['username'] = $_POST['username'];
@@ -78,11 +83,26 @@ class IndexController extends Controller {
 	    	}
 
     	}
+        if(!$this->is_login()){
+            $this->display("register");
+        }else{
+            $this->redirect("index");
+        }
     	
     }
 
     public function delUser(){
-
+        $id = $_GET['id'];
+        $p = $_GET['p'];
+        // echo $id,$p;exit;
+        $User = new \Home\Model\UserModel();
+        if($User->deleteUser($id) > 0)
+        {
+            $this->assign('message',$this->ajaxReturnMessage(5));
+            $this->redirect('index',array('p'=>$p));
+        }else{
+            $this->assign('message',$this->ajaxReturnMessage(6));
+        }
     }
 
     public function uptUser(){
@@ -115,8 +135,17 @@ class IndexController extends Controller {
     			return array('status'=>2,'message'=>'验证码输入错误！');
     			break;
     		case 3:
-    			return array('status'=>3,'message'=>'用户名或密码错误');
+    			return array('status'=>3,'message'=>'用户名或密码错误！');
     			break;
+            case 4:
+                return array('status'=>4,'message'=>'登录成功','url'=>U('Index/index'));
+                break;
+            case 5:
+                return array('status'=>5,'message'=>'删除成功');
+                break;
+            case 6:
+                return array('status'=>6,'message'=>'删除失败');
+                break;
     		default:
     			# code...
     			break;
@@ -126,5 +155,21 @@ class IndexController extends Controller {
     public function checkVerify($code, $id=1){
     	$verify = new \Think\Verify();
 		return $verify->check($code);
+    }
+
+    public function userPage($num){
+        $User = new \Home\Model\UserModel();
+        $list = $User->getUserPage($num);
+        $count = $User->getUserCount();
+        $page = new \Think\Page($count,5);
+        $show = $page->show();
+
+        $data = array(
+            'list' => $list,
+            'count' => $count,
+            'show'  => $show,
+        );
+
+        return $data;
     }
 }
