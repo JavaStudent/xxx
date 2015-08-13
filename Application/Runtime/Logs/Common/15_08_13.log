@@ -1,0 +1,12 @@
+[ 2015-08-13T17:42:02+08:00 ] 127.0.0.1 /xxx/index.php/xxx/index.php/Home/Index/index/p/%24p.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000094s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001413s ]
+ERR: 无法加载模块:Xxx
+
+[ 2015-08-13T17:43:46+08:00 ] 127.0.0.1 /xxx/index.php/xxx/index.php/Home/Index/index/p/2.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000112s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001984s ]
+ERR: 无法加载模块:Xxx
+
