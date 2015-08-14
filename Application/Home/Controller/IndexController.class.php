@@ -93,20 +93,28 @@ class IndexController extends Controller {
 
     public function delUser(){
         $id = $_GET['id'];
-        $p = $_GET['p'];
-        // echo $id,$p;exit;
         $User = new \Home\Model\UserModel();
         if($User->deleteUser($id) > 0)
         {
-            $this->assign('message',$this->ajaxReturnMessage(5));
-            $this->redirect('index',array('p'=>$p));
+            $this->success("删除成功");
         }else{
-            $this->assign('message',$this->ajaxReturnMessage(6));
+            $this->error("删除失败");
         }
     }
 
-    public function uptUser(){
-
+    //使用post传送数据
+    public function uptUser($id, $email, $phone){
+        
+        $User = new \Home\Model\UserModel();
+        $data['id'] = $id;
+        $data['email'] = $email;
+        $data['phone'] = $phone;
+        if($User->updateUser($data))
+        {
+            $this->success("更新成功");
+        }else{
+            $this->error("更新失败");
+        }
     }
 
     public function verify(){

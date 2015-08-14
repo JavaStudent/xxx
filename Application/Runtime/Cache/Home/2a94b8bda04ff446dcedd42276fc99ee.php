@@ -95,7 +95,7 @@
             </thead>
             <tbody>
               <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><tr>
-                  <td><?php echo ($user["id"]); ?></td><td><?php echo ($user["username"]); ?></td><td><?php echo ($user["username"]); ?></td><td><?php echo ($user["username"]); ?></td>
+                  <td><?php echo ($user["id"]); ?></td><td><?php echo ($user["username"]); ?></td><td><?php echo ($user["email"]); ?></td><td><?php echo ($user["phone"]); ?></td>
                   <td>
                     <button class="modal-button glyphicon glyphicon-pencil edit" data-toggle="modal" data-target="#myModal<?php echo ($user["id"]); ?>"></button>
                     <button class="modal-button glyphicon glyphicon-remove delete" onclick="javascript:firm(<?php echo ($user["id"]); ?>,<?php echo ($nowPage); ?>);"></button>
@@ -113,21 +113,21 @@
     <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$user): $mod = ($i % 2 );++$i;?><div class="modal fade" id="myModal<?php echo ($user["id"]); ?>" tabindex="-1" role="dialog" aria-labelledby="myModleLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
-                    <form class="bs-example bs-example-form" role="form" action="" method="POST">
+                    <form class="bs-example bs-example-form" role="form" action="<?php echo U('uptUser');?>" method="POST">
                       <div class="modal-header">
                           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                           <h4 class="modal-title" id="myModalLabel">更改信息</h4>
                       </div>
                       <div class="modal-body">
                           <!-- 表单 -->
-                          <input type="hidden" value="<?php echo ($user["id"]); ?>"/>
+                          <input type="hidden" id="id" name="id" value="<?php echo ($user["id"]); ?>"/>
                           <div class="input-group input-group-lg">
                               <span class="glyphicon glyphicon-envelope input-group-addon addon-first"></span>
-                              <input type="text" class="form-control input-first" placeholder="请输入邮箱" value="<?php echo ($user["email"]); ?>" required>
+                              <input type="text" class="form-control input-first" id="email" name="email" placeholder="请输入邮箱" value="<?php echo ($user["email"]); ?>" required>
                           </div>
                           <div class="input-group input-group-lg">
                               <span class="glyphicon glyphicon-phone input-group-addon addon-last"></span>
-                              <input type="text" class="form-control input-last" placeholder="请输入手机号码" value="<?php echo ($user["phone"]); ?>" required>
+                              <input type="text" class="form-control input-last" id="phone" name="phone" placeholder="请输入手机号码" value="<?php echo ($user["phone"]); ?>" required>
                           </div>
                       </div>
                       <div class="modal-footer">
@@ -146,10 +146,8 @@
     <script>
         function firm(id,p) {
           if (confirm("你确定删除吗？")) {
-            var url = 'delUser/id/'+id+"/p/"+p;
+            var url = 'delUser/id/'+id;
             window.location.href="<?php echo U('"+url+"');?>";
-          }else{
-
           }
         }
     </script>

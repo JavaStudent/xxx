@@ -77,4 +77,8 @@ class UserModel extends Model {
 		return $this->where("id = %d",array($id))->delete();
 	}
 
+	public function updateUser($data){
+		return $this->save($data);
+	}
+
 }
